@@ -97,7 +97,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/withcenterdev6/Desktop/WithCenterTraining/playwright-next-app",
+    "outputFileTracingRoot": "/Users/thruthesky/tmp/react/nextJs-cloudflare",
     "experimental": {
       "nodeMiddleware": false,
       "cacheLife": {
@@ -154,7 +154,7 @@
       "middlewarePrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 7,
+      "cpus": 9,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -175,7 +175,7 @@
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
       "turbo": {
-        "root": "/Users/withcenterdev6/Desktop/WithCenterTraining/playwright-next-app"
+        "root": "/Users/thruthesky/tmp/react/nextJs-cloudflare"
       },
       "typedRoutes": false,
       "typedEnv": false,
@@ -281,7 +281,7 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts"
   },
-  "appDir": "/Users/withcenterdev6/Desktop/WithCenterTraining/playwright-next-app",
+  "appDir": "/Users/thruthesky/tmp/react/nextJs-cloudflare",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

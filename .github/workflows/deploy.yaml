@@ -27,7 +27,7 @@ jobs:
         run: npx playwright test
 
       - name: Build
-        run: npm run build
+        run: npm run build:opennextjs
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
