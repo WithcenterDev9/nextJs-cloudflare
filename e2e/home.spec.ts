@@ -35,18 +35,10 @@ test.describe("Check if navigation navbar is working", () => {
 
 
     test("Calling navigation 3", async ({ page }) => {
-        const linkThree = page.getByRole('link', { "name": "Page 3" });
-        await linkThree.click();
+        const linkTwo = page.getByRole('link', { "name": "Page 3" });
+        await linkTwo.click();
         await expect(page).toHaveURL(/.*page3/);
         await expect(page.getByRole("heading", { name: 'Page' })).toBeVisible();
     });
-
 });
 
-async function testNavigation(page: Page, pageNumber: string) {
-    const link = page.getByRole('link', { "name": `Page ${pageNumber}` });
-    await link.click();
-    await expect(page).toHaveURL(/.*pageNumber/);
-
-    await expect(page.getByRole("heading", { name: 'Page' })).toBeVisible();
-}

@@ -15,7 +15,7 @@ export default function Navbar() {
                     <Link href={"/page3"}>Page 3</Link>
                 </li>
                 <li>
-                    <Link href={"/page4"}>Page 3</Link>
+                    <Link href={"/page4"}>Page 4</Link>
                 </li>
             </ul>
         </nav>
