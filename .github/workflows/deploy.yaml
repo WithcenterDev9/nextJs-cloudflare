@@ -3,17 +3,17 @@ name: NextJS Worker
 on:
   push:
     branches:
-        - main 
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v4 
+        uses: actions/setup-node@v4
         with:
           node-version: "18.x"
 
@@ -27,10 +27,9 @@ jobs:
         run: npx playwright test
 
       - name: Build
-        run: npm run build 
+        run: npm run build
 
       - name: Build & Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{secrets.CLOUDFLARE_API_TOKEN}}
-          accountId: ${{secrets.CLOUDFLARE_ACCOUNT_ID}}
+          token: ${{secrets.CLOUDFLARE_API_TOKEN}}
