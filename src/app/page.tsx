@@ -1,7 +1,7 @@
 export default function Home() {
-    return (
-        <section>
-            <h1>Home</h1>
-        </section>
-    )
+  return (
+    <section>
+      <h1>Home: Update without act</h1>
+    </section>
+  );
 }
